@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: darkcyan;
+}
+
+.container {
+    border-radius: 2px;
+    max-width: 550px;
+    min-height: 550px;
+    width: 96%;
+    margin: 1em auto;
+}
+
+form,
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    background-color: #1F2937;
+    height: 90px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+footer {
+    background-color: #1F2937;
+    height: 46px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+main {
+    height: 414px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select {
+    width: 312px;
+    color: #D1D5DB;
+    background: #1F293A;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+select,
+button {
+    height: 42px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    font-family: inherit;
+    font-style: inherit;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    border: none;
+    width: 123px;
+    background: #3D4B60;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+
+}
+
+input {
+    width: 61px;
+    height: 42px;
+    cursor: pointer;
+}
+
+p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #D5D4D8;
+}
+
+.color-container {
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.color-container:hover,
+.color-container:focus,
+.color-container:active {
+    width: 22%;
+}
+
+#color-1 {
+    background: #F55A5A;
+}
+
+#color-2 {
+    background: #2B283A;
+}
+
+#color-3 {
+    background: #FBF3AB;
+}
+
+#color-4 {
+    background: #AAD1B6;
+}
+
+#color-5 {
+    background: #A626D3;
+}
+
+@media (max-width: 450px) {
+    input {
+        width: 50px;
+    }
+    
+    select {
+        width: 280px;
+    }
+    
+    button {
+        width: 110px;
+    }
+}

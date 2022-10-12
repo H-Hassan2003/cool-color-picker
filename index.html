@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <form id="form">
+                <input type="color" id="color-picker" value="#F55A5A">
+                <label for="color-modes-list"></label>
+                <select name="color-modes" id="color-modes-list">
+                    <option value="monochrome" selected>Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button type="submit">Get color scheme</button>
+            </form>
+        </header>
+        <main>
+            <div id="color-1" class="color-container"></div>
+            <div id="color-2" class="color-container"></div>
+            <div id="color-3" class="color-container"></div>
+            <div id="color-4" class="color-container"></div>
+            <div id="color-5" class="color-container"></div>
+        </main>
+        <footer>
+            <p id="color-1-hex-value">#F55A5A</p>
+            <p id="color-2-hex-value">#2B283A</p>
+            <p id="color-3-hex-value">#FBF3AB</p>
+            <p id="color-4-hex-value">#AAD1B6</p>
+            <p id="color-5-hex-value">#A626D3</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
